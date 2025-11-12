@@ -3,7 +3,19 @@
 
 #include "Animal.h"
 
-//define mammal class here
+class mammal : public animal
+{
+    private:
+        string furColor;
+    public:
+        mammal();
+        ~mammal();
+        mammal (string name, int age, bool isHungry, string furColor);
+        string getFurColor();
+        void setFurColor(string f);
+};
+
+#endif // MAMMAL_H
 
 
 
